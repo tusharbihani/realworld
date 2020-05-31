@@ -4,6 +4,12 @@ const axios = require('axios');
 const fs = require('fs');
 const jsYaml = require('js-yaml');
 
+if (!process.env.GH_TOKEN) {
+  throw new Error('GH_TOKEN environment variable needs to be specified.');
+}
+axios.defaults.baseURL = 'https://api.github.com';
+axios.defaults.headers.common['Authorization'] = `token ${process.env.GH_TOKEN}`;
+
 const README_TEMPLATE_FILE = '../README.template.md';
 const README_TARGET_FILE = '../README.md';
 
@@ -18,9 +24,6 @@ const MOBILE_WIP_PLACEHOLDER = 'INSERT_MOBILE_WIP';
 const FRONTEND_REPOS = jsYaml.safeLoad(fs.readFileSync('frontend-repos.yaml', 'utf8'));
 const BACKEND_REPOS = jsYaml.safeLoad(fs.readFileSync('backend-repos.yaml', 'utf8'));
 const MOBILE_REPOS = jsYaml.safeLoad(fs.readFileSync('mobile-repos.yaml', 'utf8'));
-
-axios.defaults.baseURL = 'https://api.github.com';
-axios.defaults.headers.common['Authorization'] = `token ${process.env.GH_TOKEN}`;
 
 (async () => {
   await main();
@@ -71,10 +74,25 @@ async function getSortedTable(repos) {
   console.log('\n\nSorted repos: \n\n' + repos.map(e => `  ${e.repo} (${e.stargazers_count})`).join('\n') + '\n\n');
 
   // Output sorted table
-  const output = [
+  const output = [];
+
+  // Add comment showing ranking to ease merges
+  output.push('<!--');
+  output.push('  Ranking:');
+  const repoRankings = repos.map((e, i) => 
+    `    ${(i+1).toString().padStart(2)}: ${e.title}`);
+  output.push(...repoRankings);
+  output.push('-->');
+
+  // Add header
+  output.push(...[
+    `> _Sorted by popularity on ${(new Date()).toDateString()}_`,
+    '',
     '| 🥇 | 🥈 | 🥉 |',
     '| :---:         |     :---:      |          :---: |',
-  ];
+  ]);
+
+  // Add sorted table
   let string = '';
   for (let i = 0; i < repos.length; ++i) {
     string += `| [**${repos[i].title}**<br/> ` +

@@ -20,24 +20,18 @@ RealWorld solves this by allowing you to choose any frontend (React, Angular 2, 
 
 
 # Frontends
->_Sorted by popularity every 24 hours._
-
 <!-- INSERT_FRONTEND_REPOS -->
 
 Work In Progress:
 <!--INSERT_FRONTEND_WIP -->
 
 # Backends
->_Sorted by popularity every 24 hours._
-
 <!-- INSERT_BACKEND_REPOS -->
 
 Work In Progress:
 <!-- INSERT_BACKEND_WIP -->
 
 # Mobile
->_Sorted by popularity every 24 hours._
-
 <!-- INSERT_MOBILE_REPOS -->
 
 Work In Progress:
@@ -45,7 +39,7 @@ Work In Progress:
 
 # Fullstack
 
-_Since these implementations are reponsible for the entire stack, they obviously cannot be mixed and matched but they still adhere to the same functionality & UX specs._
+_Since these implementations are responsible for the entire stack, they obviously cannot be mixed and matched but they still adhere to the same functionality & UX specs._
 
 Work In Progress: **[Meteor]() | [Ruby Hyperloop]() | [Firebase](https://github.com/gothinkster/realworld/issues/199)**
 
@@ -80,15 +74,14 @@ Forks, tutorials, workshops, and other resources based on the RealWorld project:
 - [**React+Redux / Node testing workshop**](https://github.com/kentcdodds/testing-workshop) by [**Kent C. Dodds**](https://github.com/kentcdodds)
   - Example repo showing the React+Redux and Node stacks working together w/ TDD
   - Live recording of his workshop is [**available on YouTube**](https://www.youtube.com/watch?v=DdqiXcYDv-8)
-- [**A Real-World Comparison of Front-End Frameworks with Benchmarks**](https://medium.freecodecamp.org/a-real-world-comparison-of-front-end-frameworks-with-benchmarks-e1cb62fd526c) by [**Jacek Schae**](https://medium.freecodecamp.org/@jacekschae)
-  - Medium post comparing performance of various [RealWorld](https://realworld.io/) frontends
 - [**RealWorld React/NodeJS E2E Tests**](https://github.com/anishkny/realworld-e2e-test) by [**Anish Karandikar**](https://github.com/anishkny)
   - A repo showing how to wire [React](https://github.com/gothinkster/react-redux-realworld-example-app) frontend with [NodeJS](https://github.com/gothinkster/node-express-realworld-example-app) backend for a RealWorld fullstack
   - Includes E2E integration tests that use [Chrome Puppeteer](https://github.com/GoogleChrome/puppeteer) and [Mocha](https://mochajs.org) and work with CI systems like [Travis CI](https://travis-ci.org/anishkny/realworld-e2e-test) and [CircleCI](https://circleci.com/gh/anishkny/realworld-e2e-test)
   - Also demonstrates usage of [Greenkeeper](https://greenkeeper.io) for automatic dependency updates and [Snyk](https://snyk.io/) for vulnerability monitoring
 - Performance comparisons:
-  - [A Real-World Comparison of Front-End Frameworks with Benchmarks](https://medium.freecodecamp.org/a-real-world-comparison-of-front-end-frameworks-with-benchmarks-e1cb62fd526c)
-  - [A Real-World Comparison of Front-End Frameworks with Benchmarks (2018 update)](https://medium.freecodecamp.org/a-real-world-comparison-of-front-end-frameworks-with-benchmarks-2018-update-e5760fb4a962)
+  - [A Real-World Comparison of Front-End Frameworks with Benchmarks 2019](https://medium.freecodecamp.org/a-realworld-comparison-of-front-end-frameworks-with-benchmarks-2019-update-4be0d3c78075)
+  - [A Real-World Comparison of Front-End Frameworks with Benchmarks 2018](https://medium.freecodecamp.org/a-real-world-comparison-of-front-end-frameworks-with-benchmarks-2018-update-e5760fb4a962)
+  - [A Real-World Comparison of Front-End Frameworks with Benchmarks 2017](https://medium.freecodecamp.org/a-real-world-comparison-of-front-end-frameworks-with-benchmarks-e1cb62fd526c)
 
 <br />
 
@@ -107,14 +100,25 @@ Forks, tutorials, workshops, and other resources based on the RealWorld project:
 
 RealWorld would not be possible without the [open source community](#special-thanks-to) continuously helping push the project forward. In addition, we have a core project team composed of:
 
-#### [Eric Simons](https://twitter.com/ericsimons40) - Founder/Lead
+#### [Anish Karandikar](https://github.com/anishkny) - Core Maintainer
+
+<img align="left" width="40" height="40" src="https://avatars1.githubusercontent.com/u/357499?v=3&s=100">
+
+MathWorker, ex-Google, ex-Computational Fluid Dynamicist, forever lover of tech & humanities ❤️
+
+#### [Cameron Chapman](https://github.com/Cameron-C-Chapman) - Core Maintainer
+
+<img align="left" width="40" height="40" src="https://avatars1.githubusercontent.com/u/1323581?v=3&s=100">
+
+Cameron Chapman is a Software Engineer at FanThreeSixty. He's an open source enthusiast and is helping to teach a local web development boot camp at Kansas University.
+
+#### [Eric Simons](https://twitter.com/ericsimons40) - Founder/Maintainer
 
 <img align="left" width="40" height="40" src="https://avatars1.githubusercontent.com/u/556934?v=3&s=100">
 
 Eric is a Software Engineer, UI Designer, and author of many technical books & tutorials. He oversees the project direction, maintenance and organizes the planning and development efforts of the team.
 
-
-#### [Albert Pai](https://twitter.com/iamalbertpai) - Founder/Lead
+#### [Albert Pai](https://twitter.com/iamalbertpai) - Founder/Maintainer
 
 <img align="left" width="40" height="40" src="https://avatars0.githubusercontent.com/u/1776432?v=3&s=100">
 
@@ -133,25 +137,12 @@ Albert is a Software Engineer, DevOps ninja, and author of many technical books 
 
 James is a Software Engineer at Square and a contributor to the Django project. He created & maintains the RW Django codebase and continually provides guidance for the RealWorld project itself.
 
-#### [Anish Karandikar](https://github.com/anishkny) - Admin
-
-<img align="left" width="40" height="40" src="https://avatars1.githubusercontent.com/u/357499?v=3&s=100">
-
-MathWorker, ex-Google, ex-Computational Fluid Dynamicist, forever lover of tech & humanities ❤️
-
-
 #### [Sandeesh S.](https://github.com/SandeeshS) - Admin
 
 <img align="left" width="40" height="40" src="https://avatars1.githubusercontent.com/u/16877877?v=3&s=100">
 
 Full stack developer, Laravel enthusiast, Digital marketing specialist and an avid gamer.
 
-
-#### [Cameron Chapman](https://github.com/Cameron-C-Chapman) - Admin
-
-<img align="left" width="40" height="40" src="https://avatars1.githubusercontent.com/u/1323581?v=3&s=100">
-
-Cameron Chapman is a Software Engineer at FanThreeSixty. He's an open source enthusiast and is helping to teach a local web development boot camp at Kansas University.
 
 
 
